@@ -25,25 +25,6 @@ vi astro.sh     # Edit astro.sh file
 
 echo 'Enter your birth date: '        # Prompt user to enter date of birth
 read date                             # Read and store the date
-
-# Get the sum of digits 
-a=$(($date%10))                       # Get the last digit of the date
-b=$(($date/10))                       # Get the first digit(s) 
-c=$(($a+$b))                          # Sum the digits
-
-# Use case to give the message according to number
-case $c in
-1)echo "Lucky";;
-2)echo "Carefuly do your work";;
-3)echo "Storger";;
-4)echo "Happy";;
-5)echo "Can get help";;
-6)echo "Doubt";;
-7)echo "Sad";;
-8)echo "Like";;
-9)echo "Courage";;
-*)
-
 # If result is greater than 9, reduce again by summing digit
 x=$(($c%10))              # Last digit
 y=$(($c/10))              # Remaining digit(s)
@@ -63,7 +44,7 @@ case $z in
 *)echo "Try again!";;
 esac;;
 
-esac
+
 
 
 
@@ -85,32 +66,6 @@ Carefuly do your work
 
 
 _____________________________________________________________________________________________________
-//Syntax for for loop:                         
-                                               
-for varible in list                            
-    do 
-        commands
-	done
-
-_____________________________________________________________________________________________________
-//Syntax for while loop:
-
-while [ condition ]
-    do
-	    commands
-	done
-_____________________________________________________________________________________________________
-
-
-//Syntax for nested for loop:
-
-for((variable=0; variable<=input;variable++))
- do
-  for((variable=0; variable<=input;variable++))
-   do
-    commands
-   done
- done
 
 
 (02)Give list of numbers then calculate the summation and multiplication using for loop.
